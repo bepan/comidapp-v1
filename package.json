@@ -4,8 +4,9 @@
   "license": "MIT",
   "main": "electron/main.js",
   "scripts": {
-    "build:dev": "webpack -w --config ./webpack.config.dev.js",
-    "start": "rm -rf dist/ && concurrently \"npm run build:dev\" \"sh bash/start-electron.sh\"",
+    "start": "rm -rf dist/ && concurrently \"npm run build:dev\" \"npm run electron\"",
+    "build:dev": "webpack -w --config ./webpack.dev.js",
+    "electron": "sh bash/start-electron.sh",
     "test": "karma start ./karma.conf.js",
     "pree2e": "webdriver-manager update --standalone false --gecko false --quiet",
     "e2e": "protractor ./protractor.conf.js"
