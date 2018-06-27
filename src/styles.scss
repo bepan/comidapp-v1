@@ -1,10 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
 @import 'scss/variables';
+
+// Fontawesome
 @import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/fa-solid.scss';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/fa-brands.scss';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/fa-regular.scss';
 
+// Bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 html, body {
