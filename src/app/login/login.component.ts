@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ipcRenderer } from 'electron';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,16 +9,18 @@ import { ipcRenderer } from 'electron';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) {}
 
   ngOnInit() {
-    ipcRenderer.send('item:init', 'foo');
+    // ipcRenderer.send('item:init', 'foo');
   }
 
   submit(e) {
     e.preventDefault();
-    console.log('submit!');
     ipcRenderer.send('item:add', 'foo');
+    this.router.navigate(['/collection']);
   }
 
 }
