@@ -1,0 +1,21 @@
+.collection {
+  height: calc(100% - 50px);
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  > .row {
+    height: 100%;
+
+    > .col {
+      height: inherit
+    }
+  }
+
+  &-products {
+    height: inherit;
+    border: 1px solid #ebfafa;
+    border-radius: 5px;
+    padding: 15px 10px;
+  }
+
+}
