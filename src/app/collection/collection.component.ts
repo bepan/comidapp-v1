@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 export interface Car {
   vin;
@@ -10,7 +10,8 @@ export interface Car {
 @Component({
   selector: 'app-collection',
   templateUrl: './collection.component.html',
-  styleUrls: ['./collection.component.scss']
+  styleUrls: ['./collection.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class CollectionComponent implements OnInit {
 

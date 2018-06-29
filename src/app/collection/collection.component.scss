@@ -1,5 +1,5 @@
 .collection {
-  height: calc(100% - 50px);
+  height: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
 
@@ -11,11 +11,32 @@
     }
   }
 
-  &-products {
+  &-panel {
     height: inherit;
     border: 1px solid #ebfafa;
     border-radius: 5px;
     padding: 15px 10px;
+    overflow-y: auto;
   }
 
+  button {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    background-image: url('https://primefaces.org/primeng/assets/showcase/images/demo/car/VW.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+}
+
+.scrollpanel-custom {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  // padding: 15px;
+
+  .ui-scrollpanel-content {
+    padding: 15px;
+  }
 }
