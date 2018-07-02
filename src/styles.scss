@@ -53,20 +53,4 @@ body {
 }
 
 // Table Styles
-.ui-table {
-  height: calc(100% - 168px);
-  padding-bottom: 5px;
-  margin-bottom: 68px;
 
-  &-scrollable-wrapper {
-    height: 100%;
-
-    .ui-table-scrollable-view {
-      height: 100%;
-
-      .ui-table-scrollable-body {
-        height: 100%;
-      }
-    }
-  }
-}
