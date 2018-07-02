@@ -1,42 +1,36 @@
 .collection {
-  height: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  height: calc(100% - 56px);
+  padding: 15px;
 
   > .row {
     height: 100%;
 
     > .col {
-      height: inherit
+      height: inherit;
     }
   }
 
-  &-panel {
-    height: inherit;
-    border: 1px solid #ebfafa;
-    border-radius: 5px;
-    padding: 15px 10px;
-    overflow-y: auto;
+  #app-products {
+    .col {
+      padding-bottom: 10px;
+    }
+
+    button {
+      width: 100%;
+      height: 200px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      background-image: url('https://primefaces.org/primeng/assets/showcase/images/demo/car/VW.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
   }
 
-  button {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 10px;
-    background-image: url('https://primefaces.org/primeng/assets/showcase/images/demo/car/VW.png');
-    background-repeat: no-repeat;
-    cursor: pointer;
+  #collection-bill {
+    button {
+      width: 100%;
+      height: 100px;
+    }
   }
 
-}
-
-.scrollpanel-custom {
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-  // padding: 15px;
-
-  .ui-scrollpanel-content {
-    padding: 15px;
-  }
 }

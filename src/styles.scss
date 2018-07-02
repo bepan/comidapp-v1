@@ -19,5 +19,54 @@ html, body {
 }
 
 body {
-  background: linear-gradient(to bottom right, #dedede , indigo);
+  background: linear-gradient(to right bottom, indigo, #dedede);
+  background-repeat: no-repeat;
+}
+
+.row {
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+}
+
+.col {
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+}
+
+// Fieldset Styles
+.ui-fieldset {
+  background: transparent;
+  height: 100%;
+  padding-bottom: 20px;
+
+  &-legend {
+    background: transparent;
+    color: white;
+  }
+
+  &-content-wrapper { height: calc(100% - 64px); }
+
+  &-content {
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+
+// Table Styles
+.ui-table {
+  height: calc(100% - 168px);
+  padding-bottom: 5px;
+  margin-bottom: 68px;
+
+  &-scrollable-wrapper {
+    height: 100%;
+
+    .ui-table-scrollable-view {
+      height: 100%;
+
+      .ui-table-scrollable-body {
+        height: 100%;
+      }
+    }
+  }
 }

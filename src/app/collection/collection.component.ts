@@ -15,15 +15,87 @@ export interface Car {
 })
 export class CollectionComponent implements OnInit {
 
+  numbers: any;
+
   cars: Car[] = [
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
     { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
     { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
-    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' }
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
+    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
   ];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    this.numbers = new Array(300);
   }
 
 }
