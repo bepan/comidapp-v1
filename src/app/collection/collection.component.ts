@@ -22,7 +22,6 @@ export class CollectionComponent implements OnInit {
     { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
     { vin: 123, year: '$2018.00', brand: 'ford', color: 'blue' },
     { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' },
-    { vin: 123, year: 'Orden 5 Tacos', brand: 'ford', color: 'blue' }
   ];
 
   constructor() {}

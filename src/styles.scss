@@ -37,7 +37,7 @@ body {
 .ui-fieldset {
   background: transparent;
   height: 100%;
-  padding-bottom: 20px;
+  padding: 0.5em 0.5em 1em 0.5em;
 
   &-legend {
     background: transparent;
@@ -49,8 +49,24 @@ body {
   &-content {
     height: 100%;
     overflow-y: auto;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
   }
 }
 
 // Table Styles
+.ui-table {
+  height: calc(100% - 100px);
+  padding-bottom: 10px;
 
+  .ui-table-scrollable-wrapper {
+    height: 100%;
+    .ui-table-scrollable-view {
+      height: 100%;
+      .ui-table-scrollable-body {
+        background-color: #d9d9d9;
+        height: calc(100% - 68px);
+      }
+    }
+  }
+}
